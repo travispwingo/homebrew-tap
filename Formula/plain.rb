@@ -8,6 +8,12 @@ class Plain < Formula
   license "MIT"
   head "https://github.com/travispwingo/plain-lang.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/travispwingo/homebrew-tap/releases/download/plain-0.1.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "c737fafe4f74efc883f5c2c38ab35e6b66d4280d582f09ee91f4cd3cd847b15a"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "076bac5018be1d94824ba47419566cccebe989b788b00ea02adf1cebf329a88b"
+  end
+
   depends_on "python@3.15"
 
   def install
